@@ -1,0 +1,100 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background: black;
+    width: 100%;
+    height: 15%;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    position: static;
+    z-index: 100;
+}
+
+main {
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    overflow-y: auto;
+}
+
+/* MAPA */
+
+#map {
+    height: 100%;
+    width: 50%;
+    z-index: 50;
+}
+
+/* FORMULARIO */
+
+#contenido {
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    gap: 5%;
+}
+
+#datosEmpresa {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 5%;
+    height: 100%;
+}
+
+#datos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+}
+
+#datos div{
+    text-align: center;
+}
+
+#form-contacto {
+    width: 100%;
+    height: 70%;
+}
+
+.btn{
+    float: right;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 700px) {
+
+    #contenido{
+        flex-direction: column;
+    }
+
+    #map{
+        height: 50%;
+        width: 100%;
+    }
+
+    #datosEmpresa{
+        width: 100%;
+        height: 50%;
+    }
+
+    #datos,#form-contacto{
+        height: auto;
+    }
+
+}

@@ -1,0 +1,59 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background: black;
+    width: 100%;
+    height: 15%;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    position: static;
+    z-index: 100;
+}
+
+main {
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    overflow-y: auto;
+}
+
+#contenido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+   width: 100%;
+   height: auto;
+   padding: 2%;
+}
+
+#welcome{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#fotoEmpleado{
+    width: 50%;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 1200px){
+
+    #contenido{
+        flex-direction: column;
+    }
+
+}
+
+

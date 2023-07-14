@@ -1,0 +1,31 @@
+body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    text-align: center;
+}
+
+#todo{
+    padding: 2%;
+}
+
+h1 {
+    font-size: 36px;
+    color: white;
+    margin-top: 50px;
+}
+
+p {
+    font-size: 18px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
